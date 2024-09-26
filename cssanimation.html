@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background: #eee;
+            }
+            .card{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                line-height: 300px;
+                margin: -150px;
+                background: white;
+                color: #03446A;
+                text-align: center;
+                font-size: 40px;
+                box-shadow: 0 0 15px rgba(0,0,0,0,1);
+                animation-name: sample;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                /*animation : sample 2s infinite alternate*/
+            }
+            @keyframes sample{
+                /*from{border-radius: 0% ;}
+                to{border-radius: 50%;
+                we can change as we can 0% 10% 25% 100%50% etc key frame}*/
+                0%{border-radius: 0%;}
+                100%{border-radius: 50%; background-color: tomato;color: wheat;}
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 50px;">CSS Animation</h1>
+        <div class="card">Yahoo Baba</div>
+    </body>
+    
+</html>

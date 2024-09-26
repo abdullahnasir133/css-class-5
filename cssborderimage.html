@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>BORDER IMAGE</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                padding-left: 30px;
+            }
+            #box{ 
+                width: 350px;
+                height: 350px;
+                border: 20px solid black;
+                text-align: justify;
+                padding: 20px;
+                background: mediumpurple;
+                border-image: url(images/hand-drawn-ornament-borders_23-2151252129.avif);
+                border-image-slice: 31;
+                border-image-repeat: round ;
+                /*ALl values in border image shorthand is written as as shorthand
+                border-image:source | slice| width| outset|repeat;
+                border-image:url() 21/15px/5px/round;
+                border-imagelinear gradient(to right,red,yellow)25*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-bottom: 50px;">CSS Border image</h1>
+        <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo provident illo voluptatem, optio esse aspernatur dolorum ab doloremque modi fuga quos voluptatum aliquam! Cupiditate harum reiciendis velit labore, quam rerum.</div>
+    </body>
+</html>
